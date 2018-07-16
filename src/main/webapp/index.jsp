@@ -11,17 +11,17 @@
     <title>joe</title>
 </head>
 
-<body>
+
 
 springmvc上传文件
-<form name="from1" action="/manage/product/upload.do" method="post" enctype="multipart/form-data">
-<input type="file" name="upload_file">
-<input type="submit" value="springmvc上传文件">
+<body name="from1" action="/manage/product/upload.do" method="post" enctype="multipart/form-data">
+<input type="file" name="upload_file"/>
+<input type="submit" value="springmvc上传文件"/>
 
 富文本上传
 <form name="from2" action="/manage/product/richtext_img_upload.do" method="post" enctype="multipart/form-data">
-<input type="file" name="upload_file">
-<input type="submit" value="富文本的上传">
+<input type="file" name="upload_file"/>
+<input type="submit" value="富文本的上传"/>
 </form>
 </body>
 </html>
