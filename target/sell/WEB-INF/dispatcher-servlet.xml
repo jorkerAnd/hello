@@ -32,7 +32,7 @@
 
 
 
-    <!-- 文件上传 -->
+    <!-- 文件上传 ,配合代码进行文件的上传-->
     <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
         <property name="maxUploadSize" value="10485760"/> <!-- 上传文件的最大值10m -->
         <property name="maxInMemorySize" value="4096" />

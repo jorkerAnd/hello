@@ -267,13 +267,13 @@
 
 
 
-
+<!--下面的配置是将本地的jar包也同样上传到服务器上-->
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
-                    <source>1.7</source>
-                    <target>1.7</target>
+                    <source>1.8</source>
+                    <target>1.8</target>
                     <encoding>UTF-8</encoding>
                     <!--下面的配置很重要，将对应的本地jar包同样进行打包，如果没有下列的选项，则发布项目的时候就会出现找不到类的情况-->
                     <compilerArguments>

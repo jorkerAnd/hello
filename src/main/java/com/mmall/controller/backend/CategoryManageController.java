@@ -2,11 +2,15 @@ package com.mmall.controller.backend;
 
 import com.mmall.common.Const;
 import com.mmall.common.ServiceResponse;
+import com.mmall.dao.CartMapper;
+import com.mmall.pojo.Cart;
 import com.mmall.pojo.Category;
 import com.mmall.pojo.User;
 import com.mmall.service.ICategoryService;
 import com.mmall.service.IUserService;
 import lombok.extern.apachecommons.CommonsLog;
+import org.aspectj.lang.annotation.Aspect;
+import org.aspectj.lang.annotation.Before;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -17,10 +21,13 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 //todo 因为再进行每操作之前都要进行是否为管理员的操作，在想可以创建一个切面，来每次都从seesionz中进行判断，如果不是管理员，则抛出一个异常，再进行异常的捕捉
+
 @Controller
 @RequestMapping("manage/category")
 public class CategoryManageController {
 
+    @Autowired
+    private CartMapper cartMapper;
     @Autowired
     private IUserService iUserService;
     @Autowired
@@ -92,7 +99,7 @@ public class CategoryManageController {
      */
     @RequestMapping("get_deep_name.do")
     @ResponseBody
-    public ServiceResponse<List<Category>> getCategoryAndDeepChildCategory(HttpSession session, @RequestParam(value="categoryId",defaultValue = "0") Integer categoryId){
+    public ServiceResponse getCategoryAndDeepChildCategory(HttpSession session, @RequestParam(value="categoryId",defaultValue = "0") Integer categoryId){
         User user = (User) session.getAttribute(Const.CURRENT_USER);
         if (user == null)
             return ServiceResponse.createByCodeMessage(10, "用户未登陆，请先登陆");

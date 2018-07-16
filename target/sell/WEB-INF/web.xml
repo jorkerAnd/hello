@@ -35,7 +35,7 @@
     <context-param>
         <param-name>contextConfigLocation</param-name>
         <param-value>
-            classpath:applicationContext.xml<!--spring容器初始化的xml文件-->
+            classpath:applicationContext.xml
         </param-value>
     </context-param>
 <!--进行springmvc的设置-->

@@ -77,15 +77,13 @@ public class CategoryServiceImpl implements ICategoryService {
     }
 
     /**
-     * 递归查询本节点的id和子节点的id
-     *
+     * 递归查询本节点的id和子节点的id,无论如何都回
+     *也可能出现其出现为空的情况
      * @param
      * @return
      */
-    public ServiceResponse selectCategoryAndChildrenById(Integer categoryId) {
-        /**
-         * categoryId一定有默认值
-         */
+    public ServiceResponse<List<Integer>> selectCategoryAndChildrenById(Integer categoryId) {
+
         Set<Category> categorySet = Sets.newHashSet();
         findChildCategory(categorySet, categoryId);
         List<Integer> categoryList = Lists.newArrayList();

@@ -1,24 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" ?>
-<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.mmall.dao.UserMapper">
+
     <resultMap id="BaseResultMap" type="com.mmall.pojo.User">
         <constructor>
-            <idArg column="id" jdbcType="INTEGER" javaType="java.lang.Integer"/>
-            <arg column="username" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="password" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="email" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="phone" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="question" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="answer" jdbcType="VARCHAR" javaType="java.lang.String"/>
-            <arg column="role" jdbcType="INTEGER" javaType="java.lang.Integer"/>
-            <arg column="create_time" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
-            <arg column="update_time" jdbcType="TIMESTAMP" javaType="java.util.Date"/>
+            <idArg column="id" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <arg column="username" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="password" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="email" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="phone" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="question" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="answer" javaType="java.lang.String" jdbcType="VARCHAR"/>
+            <arg column="role" javaType="java.lang.Integer" jdbcType="INTEGER"/>
+            <arg column="create_time" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
+            <arg column="update_time" javaType="java.util.Date" jdbcType="TIMESTAMP"/>
         </constructor>
     </resultMap>
     <sql id="Base_Column_List">
     id, username, password, email, phone, question, answer, role, create_time, update_time
   </sql>
-    <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    <select id="selectByPrimaryKey" parameterType="java.lang.Integer" resultMap="BaseResultMap">
         select
         <include refid="Base_Column_List"/>
         from mmall_user
@@ -152,12 +153,12 @@
     where id = #{id,jdbcType=INTEGER}
   </update>
 
-    <select id="checkUsername" resultType="int" parameterType="string">
+    <select id="checkUsername" parameterType="string" resultType="int">
     select count(1) from mmall_user
     --    因为username数据库是独一无二的，所以可以用count来进行操作
     where username = #{username}
   </select>
-    <select id="selectLogin" resultMap="BaseResultMap" parameterType="map">
+    <select id="selectLogin" parameterType="map" resultMap="BaseResultMap">
         select
         -- parameterType所写的map会自动识别为java util下的Map对象
         <include refid="Base_Column_List"/>
@@ -165,19 +166,19 @@
         where username=#{username}
         and password=#{password}
     </select>
-    <select id="checkEmail" resultType="int" parameterType="string">
+    <select id="checkEmail" parameterType="string" resultType="int">
     select
     count(1) from mmall_user
    where email=#{email}
 
   </select>
-    <select id="selectQuestionByUsername" resultType="string" parameterType="string">
+    <select id="selectQuestionByUsername" parameterType="string" resultType="string">
 select
 question
 from mmall_user
 where username=#{username}
 </select>
-    <select id="checkAnswer" resultType="int" parameterType="map">
+    <select id="checkAnswer" parameterType="map" resultType="int">
     select
     count(1)
     from mmall_user
@@ -199,12 +200,10 @@ where id=#{userId}
 and  password=#{password}
 </select>
 
-<select id="checkEmailByUserId" resultType="int" parameterType="map">
-select count(1) from mmall_user
-where email = #{email}
-and id != #{userId}
---     查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在
-</select>
-
+    <select id="checkEmailByUserId" resultType="int" parameterType="map">
+    select count(1) from mmall_user
+    where email = #{email}
+    and id != #{userId}
+  </select>
 
 </mapper>
