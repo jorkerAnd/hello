@@ -1,3 +1,506 @@
-[08:40:04.277][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
-[08:40:04.351][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
-[08:40:04.401][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[12:19:30.315][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user --因为username数据库是独一无二的，所以可以用count来进行操作 where username=? 
+[12:19:30.339][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[12:22:06.121][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user --因为username数据库是独一无二的，所以可以用count来进行操作 where username=? 
+[12:22:06.121][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: admin(String)
+[12:33:35.461][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user --因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[12:33:35.517][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: admin(String)
+[14:07:24.930][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:07:24.949][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] ==> Parameters: admin(String)
+[14:07:24.973][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] <==      Total: 1
+[14:08:09.944][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:08:09.961][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: admin(String)
+[14:08:09.973][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[14:09:42.206][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:09:42.206][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==> Parameters: joe(String)
+[14:09:42.207][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] <==      Total: 1
+[14:09:55.501][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:09:55.501][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: admin(String)
+[14:09:55.503][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[14:09:55.515][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[14:09:55.515][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: admin(String), 21232F297A57A5A743894A0E4A801FC3(String)
+[14:09:55.516][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 0
+[14:11:29.951][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:11:29.951][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] ==> Parameters: joe(String)
+[14:11:29.952][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] <==      Total: 1
+[14:13:29.537][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:13:29.537][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[14:13:29.537][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[14:13:29.537][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-7] ==>  Preparing: select count (1) from mmall_user where email=? 
+[14:13:29.537][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-7] ==> Parameters: null
+[14:45:32.430][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:45:32.431][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==> Parameters: joe(String)
+[14:45:32.433][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] <==      Total: 1
+[14:45:32.435][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] ==>  Preparing: select count (1) from mmall_user where email=? 
+[14:45:32.435][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] ==> Parameters: 359625410@qq.com(String)
+[14:46:14.302][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:46:14.302][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[14:46:14.302][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[14:46:14.303][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==>  Preparing: select count (1) from mmall_user where email=? 
+[14:46:14.304][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==> Parameters: 359625410@qq.com(String)
+[14:48:52.202][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:48:52.222][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[14:48:52.235][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[14:48:52.241][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==>  Preparing: select count (1) from mmall_user where email=? 
+[14:48:52.241][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==> Parameters: 359625410@qq.com(String)
+[14:54:03.506][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:54:03.507][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: admin(String)
+[14:54:03.508][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[14:54:06.601][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:54:06.602][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==> Parameters: admin(String)
+[14:54:06.603][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] <==      Total: 1
+[14:54:13.677][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:54:13.677][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==> Parameters: joe(String)
+[14:54:13.678][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] <==      Total: 1
+[14:54:13.679][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] ==>  Preparing: select count (1) from mmall_user where email=? 
+[14:54:13.680][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] ==> Parameters: null
+[14:58:17.320][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:58:17.346][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[14:58:17.360][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[14:58:17.365][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email=? 
+[14:58:17.365][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==> Parameters: 359625410@qq.com(String)
+[14:58:17.366][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] <==      Total: 1
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email=? 
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==> Parameters: 35962541@qq.com(String)
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] <==      Total: 1
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?,=now(), =now()) 
+[14:58:22.310][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==> Parameters: null, joe(String), 8FF32489F92F33416694BE8FDC2D4C22(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer)
+[14:59:26.333][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[14:59:26.348][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[14:59:26.348][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[14:59:26.367][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email=? 
+[14:59:26.368][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] ==> Parameters: 35962541@qq.com(String)
+[14:59:26.368][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-5] <==      Total: 1
+[14:59:26.371][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-5] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?,=now(), =now() 
+[14:59:26.372][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-5] ==> Parameters: null, joe(String), 8FF32489F92F33416694BE8FDC2D4C22(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer)
+[15:03:32.209][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:03:32.230][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[15:03:32.248][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[15:03:32.255][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email=? 
+[15:03:32.256][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==> Parameters: 35962541@qq.com(String)
+[15:03:32.256][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] <==      Total: 1
+[15:03:32.259][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?,=now(), =now() 
+[15:03:32.260][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==> Parameters: null, joe(String), 8FF32489F92F33416694BE8FDC2D4C22(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer)
+[15:09:17.629][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:09:17.647][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[15:09:17.647][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[15:09:17.663][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email=? 
+[15:09:17.663][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==> Parameters: 35962541@qq.com(String)
+[15:09:17.663][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] <==      Total: 1
+[15:09:17.663][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?,now(), now() 
+[15:09:17.663][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==> Parameters: null, joe(String), 8FF32489F92F33416694BE8FDC2D4C22(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer)
+[15:10:34.639][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:10:34.655][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[15:10:34.670][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[15:10:34.686][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email=? 
+[15:10:34.686][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] ==> Parameters: 35962541@qq.com(String)
+[15:10:34.686][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-6] <==      Total: 1
+[15:10:34.686][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==>  Preparing: insert into mmall_user (id, username, password, email, phone, question, answer, role, create_time, update_time) values (?, ?, ?, ?, ?, ?, ?, ?,now(), now()) 
+[15:10:34.686][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] ==> Parameters: null, joe(String), 8FF32489F92F33416694BE8FDC2D4C22(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer)
+[15:10:34.695][DEBUG][com.mmall.dao.UserMapper.insert][http-nio-8080-exec-6] <==    Updates: 1
+[15:20:07.079][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:20:07.079][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==> Parameters: admin(String)
+[15:20:07.081][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] <==      Total: 1
+[15:20:22.373][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email=? 
+[15:20:22.373][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-10] ==> Parameters: 359625410@qq.com(String)
+[15:20:22.374][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-10] <==      Total: 1
+[15:20:32.131][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where email=? 
+[15:20:32.131][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-1] ==> Parameters: 359610@qq.com(String)
+[15:20:32.131][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-1] <==      Total: 1
+[15:21:54.234][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:21:54.234][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: admin(String)
+[15:21:54.235][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[15:22:46.432][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:22:46.432][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==> Parameters: joe(String)
+[15:22:46.433][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] <==      Total: 1
+[15:22:58.525][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user where email=? 
+[15:22:58.525][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] ==> Parameters: 359610@qq.com(String)
+[15:22:58.526][DEBUG][com.mmall.dao.UserMapper.checkEmail][http-nio-8080-exec-9] <==      Total: 1
+[15:24:26.155][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:24:26.155][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] ==> Parameters: admin(String)
+[15:24:26.156][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] <==      Total: 1
+[15:24:26.166][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-2] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[15:24:26.167][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-2] ==> Parameters: admin(String), 21232F297A57A5A743894A0E4A801FC3(String)
+[15:24:26.168][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-2] <==      Total: 0
+[15:24:43.132][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:24:43.132][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[15:24:43.132][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[15:24:43.132][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[15:24:43.132][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 8FF32489F92F33416694BE8FDC2D4C22(String)
+[15:24:43.148][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[15:28:45.084][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:28:45.084][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] ==> Parameters: admin(String)
+[15:28:45.085][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] <==      Total: 1
+[15:28:45.086][DEBUG][c.m.d.U.selectQuestionByUsername][http-nio-8080-exec-3] ==>  Preparing: select question from mmall_user where username=? 
+[15:28:45.087][DEBUG][c.m.d.U.selectQuestionByUsername][http-nio-8080-exec-3] ==> Parameters: admin(String)
+[15:28:45.089][DEBUG][c.m.d.U.selectQuestionByUsername][http-nio-8080-exec-3] <==      Total: 1
+[15:29:03.384][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:29:03.385][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[15:29:03.386][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[15:29:03.388][DEBUG][c.m.d.U.selectQuestionByUsername][http-nio-8080-exec-7] ==>  Preparing: select question from mmall_user where username=? 
+[15:29:03.389][DEBUG][c.m.d.U.selectQuestionByUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[15:29:03.391][DEBUG][c.m.d.U.selectQuestionByUsername][http-nio-8080-exec-7] <==      Total: 1
+[15:41:02.570][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where username=? and question=? and answer=? 
+[15:41:02.570][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-10] ==> Parameters: joe(String), 问题(String), 11(String)
+[15:41:02.572][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-10] <==      Total: 1
+[15:41:09.456][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-1] ==>  Preparing: select count(1) from mmall_user where username=? and question=? and answer=? 
+[15:41:09.456][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-1] ==> Parameters: joe(String), 问题(String), 1(String)
+[15:41:09.456][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-1] <==      Total: 1
+[15:46:06.040][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:46:06.041][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] ==> Parameters: joe(String)
+[15:46:06.041][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] <==      Total: 1
+[15:46:06.043][DEBUG][c.m.d.U.updatePasswordByUsername][http-nio-8080-exec-4] ==>  Preparing: update mmall_user set password=?,update_time=now() where username=? 
+[15:46:06.043][DEBUG][c.m.d.U.updatePasswordByUsername][http-nio-8080-exec-4] ==> Parameters: F53F8536B3AC0DF14CD0127D5166A57F(String), joe(String)
+[15:46:06.049][DEBUG][c.m.d.U.updatePasswordByUsername][http-nio-8080-exec-4] <==    Updates: 1
+[15:46:33.847][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:46:33.847][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[15:46:33.847][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[15:46:40.251][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:46:40.251][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==> Parameters: jo(String)
+[15:46:40.251][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] <==      Total: 1
+[15:46:43.687][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:46:43.687][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==> Parameters: joe(String)
+[15:46:43.688][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] <==      Total: 1
+[15:48:15.590][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:48:15.590][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] ==> Parameters: (String)
+[15:48:15.590][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] <==      Total: 1
+[15:48:20.225][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:48:20.225][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: sh
+(String)
+[15:48:20.226][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[15:48:24.776][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:48:24.776][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] ==> Parameters: joe
+(String)
+[15:48:24.777][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-4] <==      Total: 1
+[15:48:39.241][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[15:48:39.241][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[15:48:39.241][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[16:12:07.250][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where username=? and question=? and answer=? 
+[16:12:07.250][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-2] ==> Parameters: joe(String), 问题(String), 1(String)
+[16:12:07.251][DEBUG][com.mmall.dao.UserMapper.checkAnswer][http-nio-8080-exec-2] <==      Total: 1
+[16:14:23.256][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:14:23.288][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] ==> Parameters: admin(String)
+[16:14:23.288][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-9] <==      Total: 1
+[16:14:23.303][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-9] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:14:23.303][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-9] ==> Parameters: admin(String), 21232F297A57A5A743894A0E4A801FC3(String)
+[16:14:23.303][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-9] <==      Total: 0
+[16:14:39.971][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-10] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:14:39.972][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-10] ==> Parameters: joe(String)
+[16:14:39.973][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-10] <==      Total: 1
+[16:14:39.975][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-10] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:14:39.975][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-10] ==> Parameters: joe(String), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:14:39.986][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-10] <==      Total: 1
+[16:15:45.944][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:15:45.967][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:15:45.980][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:15:45.980][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:15:45.980][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:15:45.980][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[16:16:29.249][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-9] ==>  Preparing: select count(1) --count(1)的效率比count(*)的效率要高 from mmall_user where id=? and password=? 
+[16:16:29.249][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-9] ==> Parameters: 2(Integer), 15DE21C670AE7C3F6F3F1F37029303C9(String)
+[16:23:49.493][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-1] ==>  Preparing: select count(1) --count(1)的效率比count(*)的效率要高 from mmall_user where id=? and password=? 
+[16:23:49.493][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-1] ==> Parameters: 2(Integer), 15DE21C670AE7C3F6F3F1F37029303C9(String)
+[16:25:04.995][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:25:05.021][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:25:05.036][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:25:05.036][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:25:05.036][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:25:05.052][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[16:25:09.293][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-7] ==>  Preparing: select count(1) -- count(1)的效率比count(*)的效率要高 from mmall_user where password=? and id=? 
+[16:25:09.293][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-7] ==> Parameters: 15DE21C670AE7C3F6F3F1F37029303C9(String), 2(Integer)
+[16:25:09.293][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-7] <==      Total: 1
+[16:26:01.311][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:26:01.327][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:26:01.343][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:26:01.343][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:26:01.343][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:26:01.358][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[16:26:03.563][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-8] ==>  Preparing: select count(1) -- count(1)的效率比count(*)的效率要高 from mmall_user where id=? and password=? 
+[16:26:03.563][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-8] ==> Parameters: 2(Integer), 15DE21C670AE7C3F6F3F1F37029303C9(String)
+[16:26:03.563][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-8] <==      Total: 1
+[16:26:24.683][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-7] ==>  Preparing: select count(1) -- count(1)的效率比count(*)的效率要高 from mmall_user where id=? and password=? 
+[16:26:24.683][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-7] ==> Parameters: 2(Integer), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:26:24.685][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-7] <==      Total: 1
+[16:26:24.721][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-7] ==>  Preparing: update mmall_user SET username = ?, password = ?, email = ?, phone = ?, question = ?, answer = ?, role = ?, create_time = ?, update_time = =now() where id = ? 
+[16:26:24.722][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-7] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer), 2018-06-20 15:10:34.0(Timestamp), 2(Integer)
+[16:27:21.452][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-2] ==>  Preparing: select count(1) -- count(1)的效率比count(*)的效率要高 from mmall_user where id=? and password=? 
+[16:27:21.452][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-2] ==> Parameters: 2(Integer), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:27:21.453][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-2] <==      Total: 1
+[16:27:21.455][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-2] ==>  Preparing: update mmall_user SET username = ?, password = ?, email = ?, phone = ?, question = ?, answer = ?, role = ?, create_time = ?, update_time = =now() where id = ? 
+[16:27:21.455][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-2] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer), 2018-06-20 15:10:34.0(Timestamp), 2(Integer)
+[16:28:31.761][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:28:31.789][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:28:31.804][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:28:31.812][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:28:31.812][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:28:31.821][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[16:28:33.893][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-6] ==>  Preparing: select count(1) -- count(1)的效率比count(*)的效率要高 from mmall_user where id=? and password=? 
+[16:28:33.893][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-6] ==> Parameters: 2(Integer), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:28:33.894][DEBUG][com.mmall.dao.UserMapper.checkPassword][http-nio-8080-exec-6] <==      Total: 1
+[16:28:33.944][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-6] ==>  Preparing: update mmall_user SET username = ?, password = ?, email = ?, phone = ?, question = ?, answer = ?, role = ?, create_time = ?, update_time =now() where id = ? 
+[16:28:33.945][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-6] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String), 35962541@qq.com(String), 2100081(String), 问题(String), 1(String), 0(Integer), 2018-06-20 15:10:34.0(Timestamp), 2(Integer)
+[16:28:33.948][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-6] <==    Updates: 1
+[16:32:01.100][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email=? and id!=? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:32:01.100][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:34:26.509][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:34:26.539][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:34:26.564][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:34:26.576][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:34:26.576][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), F53F8536B3AC0DF14CD0127D5166A57F(String)
+[16:34:26.577][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 0
+[16:34:40.091][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:34:40.091][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[16:34:40.092][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[16:34:40.094][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:34:40.094][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:34:40.105][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] <==      Total: 1
+[16:34:42.182][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-9] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:34:42.182][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-9] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:35:50.916][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:35:50.936][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:35:50.958][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:35:50.965][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:35:50.965][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:35:50.971][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[16:37:44.040][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:37:44.042][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-4] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:41:01.532][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:41:01.563][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==> Parameters: joe(String)
+[16:41:01.582][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] <==      Total: 1
+[16:41:01.599][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-8] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:41:01.599][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-8] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:41:01.615][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-8] <==      Total: 1
+[16:42:34.148][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:42:34.148][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:46:49.127][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:46:49.140][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[16:46:49.155][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[16:46:49.171][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:46:49.171][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:46:49.171][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] <==      Total: 1
+[16:46:55.234][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:46:55.235][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-5] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:48:55.103][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:48:55.116][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[16:48:55.131][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[16:48:55.131][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:48:55.131][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:48:55.131][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[16:48:57.048][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==>  Preparing: select count(1)from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:48:57.049][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:55:51.230][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:55:51.261][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[16:55:51.277][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[16:55:51.287][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:55:51.287][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:55:51.293][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] <==      Total: 1
+[16:55:54.744][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:55:54.744][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-5] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[16:58:14.200][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[16:58:14.201][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] ==> Parameters: joe(String)
+[16:58:14.202][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-8] <==      Total: 1
+[16:58:14.204][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-8] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[16:58:14.204][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-8] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[16:58:14.206][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-8] <==      Total: 1
+[16:59:14.679][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-2] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[16:59:14.679][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-2] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:01:23.347][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:01:23.363][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[17:01:23.385][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[17:01:23.392][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:01:23.392][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:01:23.398][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[17:01:25.371][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:01:25.371][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:03:45.048][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:03:45.063][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[17:03:45.079][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[17:03:45.095][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:03:45.095][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:03:45.095][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] <==      Total: 1
+[17:03:46.920][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-3] ==>  Preparing: select count(1) from mmall_user where id != ? and email = ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:03:46.920][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-3] ==> Parameters: 2(Integer), 359625410@qq.com(String)
+[17:05:23.975][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:05:23.985][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[17:05:24.000][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[17:05:24.000][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:05:24.016][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:05:24.016][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[17:05:25.358][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-4] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
+[17:05:25.359][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-4] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:05:25.360][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-4] <==      Total: 1
+[17:06:24.896][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:06:24.920][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[17:06:24.936][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[17:06:24.951][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:06:24.951][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:06:24.951][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] <==      Total: 1
+[17:06:26.463][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-8] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:06:26.463][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-8] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:08:20.755][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:08:20.784][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[17:08:20.796][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[17:08:20.803][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:08:20.804][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:08:20.813][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[17:08:22.001][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? 
+[17:08:22.001][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:08:22.002][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] <==      Total: 1
+[17:09:01.677][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:09:01.702][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[17:09:01.704][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[17:09:01.704][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:09:01.704][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:09:01.722][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[17:09:03.326][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:09:03.326][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:09:46.104][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:09:46.119][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] ==> Parameters: joe(String)
+[17:09:46.143][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-7] <==      Total: 1
+[17:09:46.151][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:09:46.151][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:09:46.158][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-7] <==      Total: 1
+[17:09:48.206][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? --查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:09:48.207][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:10:29.343][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[17:10:29.374][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[17:10:29.394][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[17:10:29.400][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[17:10:29.401][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[17:10:29.406][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[17:10:31.358][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? -- 查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:10:31.358][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] ==> Parameters: 359625410@qq.com(String), 2(Integer)
+[17:10:31.359][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-6] <==      Total: 1
+[17:16:12.617][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] ==>  Preparing: select count(1) from mmall_user where email = ? and id != ? -- 查找不是这个用户的email是否存在，如果count>0，那么email在别的用户那里存在 
+[17:16:12.617][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] ==> Parameters: 3596254@qq.com(String), 2(Integer)
+[17:16:12.618][DEBUG][c.m.dao.UserMapper.checkEmailByUserId][http-nio-8080-exec-10] <==      Total: 1
+[17:16:12.677][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-10] ==>  Preparing: update mmall_user SET username = ?, email = ?, phone = ?, question = ?, answer = ? where id = ? 
+[17:16:12.677][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-10] ==> Parameters: joe(String), 3596254@qq.com(String), 2100081(String), admin(String), admin(String), 2(Integer)
+[17:16:12.680][DEBUG][c.m.d.U.updateByPrimaryKeySelective][http-nio-8080-exec-10] <==    Updates: 1
+[17:19:15.596][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-3] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
+[17:19:15.597][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-3] ==> Parameters: 2(Integer)
+[17:19:15.598][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-3] <==      Total: 1
+[17:20:04.716][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-7] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
+[17:20:04.717][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-7] ==> Parameters: 2(Integer)
+[17:20:04.717][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-7] <==      Total: 1
+[17:20:20.875][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-8] ==>  Preparing: select id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where id = ? 
+[17:20:20.876][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-8] ==> Parameters: 2(Integer)
+[17:20:20.877][DEBUG][c.m.dao.UserMapper.selectByPrimaryKey][http-nio-8080-exec-8] <==      Total: 1
+[21:27:33.300][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[21:27:33.332][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: admin(String)
+[21:27:33.347][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[21:27:33.363][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[21:27:33.363][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==> Parameters: admin(String), 21232F297A57A5A743894A0E4A801FC3(String)
+[21:27:33.363][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] <==      Total: 0
+[21:28:27.467][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[21:28:27.467][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] ==> Parameters: joe(String)
+[21:28:27.468][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-3] <==      Total: 1
+[21:28:27.469][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-3] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[21:28:27.470][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-3] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[21:28:27.481][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-3] <==      Total: 1
+[21:47:26.179][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[21:47:26.202][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] ==> Parameters: joe(String)
+[21:47:26.217][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-2] <==      Total: 1
+[21:47:26.227][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-2] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[21:47:26.227][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-2] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[21:47:26.234][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-2] <==      Total: 1
+[21:48:19.246][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] ==>  Preparing: -- 直接返回Resultmap就可以了，mybatis会直接封装成list类型 select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parentId = ? 
+[21:48:19.246][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] ==> Parameters: 0(Integer)
+[21:50:21.632][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[21:50:21.644][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] ==> Parameters: joe(String)
+[21:50:21.669][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-6] <==      Total: 1
+[21:50:21.678][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[21:50:21.679][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[21:50:21.685][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-6] <==      Total: 1
+[21:50:23.980][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parentId = ? 
+[21:50:23.981][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] ==> Parameters: 0(Integer)
+[21:51:35.082][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==>  Preparing: select count(1) from mmall_user -- 因为username数据库是独一无二的，所以可以用count来进行操作 where username = ? 
+[21:51:35.105][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] ==> Parameters: joe(String)
+[21:51:35.120][DEBUG][com.mmall.dao.UserMapper.checkUsername][http-nio-8080-exec-5] <==      Total: 1
+[21:51:35.136][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==>  Preparing: select -- parameterType所写的map会自动识别为java util下的Map对象 id, username, password, email, phone, question, answer, role, create_time, update_time from mmall_user where username=? and password=? 
+[21:51:35.136][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] ==> Parameters: joe(String), 83F004E3D2FD441F6938A856300CF992(String)
+[21:51:35.136][DEBUG][com.mmall.dao.UserMapper.selectLogin][http-nio-8080-exec-5] <==      Total: 1
+[21:51:36.930][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-6] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[21:51:36.930][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-6] ==> Parameters: 0(Integer)
+[21:51:36.932][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-6] <==      Total: 0
+[21:51:36.932][INFO][c.mmall.service.impl.CategoryServiceImpl][http-nio-8080-exec-6] 未找到当前分类的子分类
+[21:54:06.494][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[21:54:06.494][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==> Parameters: 0(Integer)
+[21:54:06.495][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] <==      Total: 1
+[21:54:51.547][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[21:54:51.547][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] ==> Parameters: 0(Integer)
+[21:54:51.548][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-5] <==      Total: 1
+[21:55:07.109][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-6] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[21:55:07.109][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-6] ==> Parameters: 0(Integer)
+[21:55:07.109][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-6] <==      Total: 1
+[22:08:49.856][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-8] ==>  Preparing: insert into mmall_category (id, parent_id, name, status, sort_order, create_time, update_time) values (?, ?, ?, ?, ?,now(), now()) 
+[22:08:49.857][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-8] ==> Parameters: null, 0(Integer), 新增的家用电器(String), true(Boolean), null
+[22:08:49.860][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-8] <==    Updates: 1
+[22:09:25.066][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-1] ==>  Preparing: insert into mmall_category (id, parent_id, name, status, sort_order, create_time, update_time) values (?, ?, ?, ?, ?,now(), now()) 
+[22:09:25.066][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-1] ==> Parameters: null, 0(Integer), 新增的家用电器(String), true(Boolean), null
+[22:09:25.066][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-1] <==    Updates: 1
+[22:13:30.438][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-5] ==>  Preparing: insert into mmall_category (id, parent_id, name, status, sort_order, create_time, update_time) values (?, ?, ?, ?, ?,now(), now()) 
+[22:13:30.438][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-5] ==> Parameters: null, 0(Integer), 新增的家用(String), true(Boolean), null
+[22:13:30.440][DEBUG][com.mmall.dao.CategoryMapper.insert][http-nio-8080-exec-5] <==    Updates: 1
+[22:15:33.394][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:15:33.394][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==> Parameters: 3(Integer)
+[22:15:33.396][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] <==      Total: 1
+[22:15:33.443][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-nio-8080-exec-2] ==>  Preparing: update mmall_category SET name = ? where id = ? 
+[22:15:33.444][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-nio-8080-exec-2] ==> Parameters: 亚奇专用(String), 3(Integer)
+[22:15:33.446][DEBUG][c.m.d.C.updateByPrimaryKeySelective][http-nio-8080-exec-2] <==    Updates: 1
+[22:19:01.945][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:01.945][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] ==> Parameters: 1(Integer)
+[22:19:01.946][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] <==      Total: 0
+[22:19:01.948][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:01.948][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] ==> Parameters: 1(Integer)
+[22:19:01.951][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] <==      Total: 2
+[22:19:01.953][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:01.953][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] ==> Parameters: 3(Integer)
+[22:19:01.953][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] <==      Total: 1
+[22:19:01.953][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:01.953][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] ==> Parameters: 3(Integer)
+[22:19:01.953][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] <==      Total: 0
+[22:19:01.953][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:01.953][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] ==> Parameters: 4(Integer)
+[22:19:01.953][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-10] <==      Total: 1
+[22:19:01.953][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:01.953][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] ==> Parameters: 4(Integer)
+[22:19:01.953][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-10] <==      Total: 0
+[22:19:28.831][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:28.832][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==> Parameters: 1(Integer)
+[22:19:28.833][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] <==      Total: 0
+[22:19:28.834][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:28.834][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==> Parameters: 1(Integer)
+[22:19:28.835][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] <==      Total: 1
+[22:19:28.838][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:28.839][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==> Parameters: 3(Integer)
+[22:19:28.843][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] <==      Total: 1
+[22:19:28.845][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:28.845][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==> Parameters: 3(Integer)
+[22:19:28.846][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] <==      Total: 1
+[22:19:28.847][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:28.847][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] ==> Parameters: 4(Integer)
+[22:19:28.848][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-2] <==      Total: 1
+[22:19:28.849][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:28.849][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] ==> Parameters: 4(Integer)
+[22:19:28.850][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-2] <==      Total: 0
+[22:19:30.632][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:30.632][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] ==> Parameters: 1(Integer)
+[22:19:30.633][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] <==      Total: 0
+[22:19:30.634][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:30.635][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] ==> Parameters: 1(Integer)
+[22:19:30.635][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] <==      Total: 1
+[22:19:30.637][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:30.637][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] ==> Parameters: 3(Integer)
+[22:19:30.638][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] <==      Total: 1
+[22:19:30.639][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:30.640][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] ==> Parameters: 3(Integer)
+[22:19:30.640][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] <==      Total: 1
+[22:19:30.642][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where id = ? 
+[22:19:30.642][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] ==> Parameters: 4(Integer)
+[22:19:30.644][DEBUG][c.m.d.CategoryMapper.selectByPrimaryKey][http-nio-8080-exec-1] <==      Total: 1
+[22:19:30.645][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] ==>  Preparing: select id, parent_id, name, status, sort_order, create_time, update_time from mmall_category where parent_id = ? 
+[22:19:30.645][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] ==> Parameters: 4(Integer)
+[22:19:30.646][DEBUG][c.m.d.C.selectCategoryChildrenByParentId][http-nio-8080-exec-1] <==      Total: 0

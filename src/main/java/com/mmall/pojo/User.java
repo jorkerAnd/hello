@@ -1,7 +1,9 @@
 package com.mmall.pojo;
 
-import java.util.Date;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+import java.util.Date;
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class User {
     private Integer id;
 
