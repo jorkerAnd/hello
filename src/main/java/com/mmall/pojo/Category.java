@@ -4,10 +4,6 @@ import java.util.Date;
 import java.util.Objects;
 
 public class Category {
-    /**
-     * 如果属性为基本类型的话，创建对象的时候会给他声明默认值，如果是对象的话，没有进行初始化，就会赋有null，
-     * 这样就有利于操作数据库的时候使用选择性更新的操作方法了，更有利于我们操作数据库
-     */
     private Integer id;
 
     private Integer parentId;
